@@ -40,3 +40,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Alias git log
 alias gl='git log --graph --abbrev-commit --decorate'
+
+# Include .profile (need for RVM to work)
+touch ~/.profile && source ~/.profile
