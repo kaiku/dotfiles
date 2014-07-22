@@ -152,3 +152,9 @@ alias reload="exec $SHELL -l"
 
 # Faster npm for europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
+
+# Alias git log
+alias gl='git log --graph --abbrev-commit --decorate'
+
+# For Python development
+alias venv='source venv/bin/activate'
