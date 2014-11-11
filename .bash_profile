@@ -41,3 +41,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # This loads RVM into a shell session.
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
+# Homebrew says this line might be necessary in the .bashrc file
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
