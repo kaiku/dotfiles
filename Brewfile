@@ -40,6 +40,7 @@ install tree
 install webkit2png
 install zopfli
 install p7zip
+install bash-completion
 
 # Install programming tools
 install python
