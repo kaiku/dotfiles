@@ -1,4 +1,8 @@
-" Use the Molokai theme (originally created for TExtMate by Wimer Hazenberg)
+" Use pathogen.vim to manage plugins
+execute pathogen#infect()
+filetype plugin indent on
+
+" Use the Molokai theme (originally created for TextMate by Wimer Hazenberg)
 colorscheme molokai
 
 " Make Vim more useful
@@ -103,16 +107,6 @@ map <C-l> <C-w>l
 
 " Make it easier to create new tabs
 map <leader>t <Esc>:tabnew<CR>
-
-" PLUGINS
-
-filetype plugin on
-set runtimepath^=~/.vim/bundle/editorconfig-vim/
-set runtimepath^=~/.vim/bundle/ctrlp.vim/
-set runtimepath^=~/.vim/bundle/vim-vinegar/
-set runtimepath^=~/.vim/bundle/vim-javascript/
-set runtimepath^=~/.vim/bundle/vim-jsx/
-set runtimepath^=~/.vim/bundle/grep.vim/
 
 " netrw
 " https://shapeshed.com/vim-netrw/
