@@ -1,16 +1,9 @@
 # Compiled Python files
 *.pyc
+**/*/__pycache__
 
 # Exclude the .extra file
 .extra
-
-# Folder view configuration files
-.DS_Store
-Desktop.ini
-
-# Thumbnail cache files
-._*
-Thumbs.db
 
 # Files that might appear on external disks
 .Spotlight-V100
@@ -18,4 +11,5 @@ Thumbs.db
 
 # IDE
 .idea
+.swp
 
