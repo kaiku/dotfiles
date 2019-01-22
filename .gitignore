@@ -1,6 +1,5 @@
 # Compiled Python files
 *.pyc
-**/*/__pycache__
 
 # Exclude the .extra file
 .extra
@@ -8,8 +7,3 @@
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
-
-# IDE
-.idea
-.swp
-
