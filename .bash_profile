@@ -19,7 +19,7 @@ HISTCONTROL=ignoreboth
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
-# append to the history file, don't overwrite it
+# Append to the Bash history file, rather than overwriting it
 shopt -s histappend
 
 # Autocorrect typos in path names when using `cd`
@@ -91,9 +91,6 @@ xterm*|rxvt*)
 *)
     ;;
 esac
-
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
