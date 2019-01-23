@@ -106,7 +106,8 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 " Make it easier to create new tabs
-map <leader>t <Esc>:tabnew<CR>
+" Disabled since conflicts with Command-T
+"map <leader>t <Esc>:tabnew<CR>
 
 " netrw
 " https://shapeshed.com/vim-netrw/
@@ -120,15 +121,5 @@ let g:netrw_browse_split = 0
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 
-" CtrlP
-" Invoke using actual ctrl-p in Normal mode
-let g:ctrlp_map = '<c-p>'
-" Set default opening command
-let g:ctrlp_cmd = 'CtrlP'
-" Search by filename (1) instead of path (0)
-let g:ctrlp_by_filename = 1
-" Ignore searching in these places
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](\.git|node_modules|bower_components|venv3?|__pycache__)$',
-    \ 'file': '\v\.(pyc)$'
-    \ }
+" Command-T
+let g:CommandTWildIgnore=&wildignore . ",*/node_modules,*/venv,*/venv3,*.pyc,*.min.js"
