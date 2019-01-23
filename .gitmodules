@@ -13,3 +13,9 @@
 [submodule ".vim/bundle/vim-jsx"]
 	path = .vim/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx
+[submodule ".vim/bundle/vim-fugutive"]
+	path = .vim/bundle/vim-fugutive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle/vim-rhubarb"]
+	path = .vim/bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
