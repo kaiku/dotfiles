@@ -2,7 +2,6 @@
 cd "$(dirname "${BASH_SOURCE}")"
 function doIt() {
     rsync --exclude ".git/" \
-          --exclude "init/" \
           --exclude "bootstrap.sh" \
           --exclude "README.md" \
           --exclude "LICENSE-MIT.txt" \
