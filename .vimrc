@@ -2,8 +2,9 @@
 execute pathogen#infect()
 filetype plugin indent on
 
-" Use the Molokai theme (originally created for TextMate by Wimer Hazenberg)
-colorscheme molokai
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
 
 " Make Vim more useful
 set nocompatible
