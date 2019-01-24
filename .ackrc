@@ -1,1 +1,7 @@
 --pager=less
+--ignore-file=ext:min.js
+--ignore-file=ext:pyc
+--ignore-file=is:tags
+--ignore-dir=venv
+--ignore-dir=node_modules
+--ignore-dir=bower_components
