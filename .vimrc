@@ -1,7 +1,16 @@
 " Use pathogen.vim to manage plugins
 execute pathogen#infect()
-filetype plugin indent on
+filetype plugin on
 
+" `filetype indent on` causes problems with vim-jsx indentation,
+" specifically it repeatedly indents the line when adding tags.
+" using `set autoindent` instead seems to address the problem
+set autoindent
+
+" Enable syntax highlighting
+syntax on
+
+" Use solarized theme. Need to set 256 colors for it to look good.
 set background=dark
 colorscheme solarized
 let g:solarized_termcolors=256
@@ -40,8 +49,6 @@ set exrc
 set secure
 " Enable line numbers
 set number
-" Enable syntax highlighting
-syntax on
 " Highlight current line
 set cursorline
 " Make tabs as wide as four spaces
