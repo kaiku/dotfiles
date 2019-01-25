@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 cd "$(dirname "${BASH_SOURCE}")"
 function doIt() {
-    rsync --exclude ".git/" \
+    git submodule init && git submodule update
+    rsync --exclude "**/.git/" \
           --exclude "bootstrap.sh" \
           --exclude "README.md" \
           --exclude "LICENSE-MIT.txt" \
