@@ -4,6 +4,9 @@
 # Exclude the .extra file
 .extra
 
+# Mac stuff
+.DS_Store
+
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
