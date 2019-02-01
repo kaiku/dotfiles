@@ -8,7 +8,9 @@ filetype plugin on
 set autoindent
 
 " Enable syntax highlighting
-syntax on
+if !exists("g:syntax_on")
+    syntax enable
+endif
 
 " Use solarized theme. Need to set 256 colors for it to look good.
 set background=dark
@@ -25,6 +27,8 @@ set wildmenu
 set backspace=indent,eol,start
 " Optimize for fast terminal connections
 set ttyfast
+" Don't redraw screen while executing macros, registers, non-typed commands
+set lazyredraw
 " Add the g flag to search/replace by default
 set gdefault
 " Use UTF-8 without BOM
