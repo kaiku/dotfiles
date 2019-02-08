@@ -12,11 +12,11 @@ if !exists("g:syntax_on")
     syntax enable
 endif
 
-" Use solarized theme. Need to set 256 colors for it to look good.
+" Set color scheme
 set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+colorscheme molokai
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans=1
 
 " Make Vim more useful
 set nocompatible
