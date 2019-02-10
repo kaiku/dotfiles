@@ -126,13 +126,17 @@ map <C-l> <C-w>l
 " https://shapeshed.com/vim-netrw/
 " Disable the banner in directory browsing mode (netrw)
 let g:netrw_banner = 0
+" Make vertical splitting the default for previewing files
+let g:netrw_preview = 1
 " Use tree list view
-let g:netrw_liststyle = 3
+"let g:netrw_liststyle = 3
+" Use long view
+let g:netrw_liststyle = 1
 " Open files reusing same window
 let g:netrw_browse_split = 0
 " Control left/right splitting
 let g:netrw_altv = 1
-let g:netrw_winsize = 25
+let g:netrw_winsize = 30
 
 " Command-T
 let g:CommandTWildIgnore=&wildignore . ",*/node_modules,*/venv,*/venv3,*.pyc,*.min.js"
