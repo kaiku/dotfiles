@@ -73,8 +73,6 @@ set hlsearch
 set ignorecase
 " Highlight dynamically as pattern is typed
 set incsearch
-" Always show status line
-set laststatus=2
 " Enable mouse in all modes
 set mouse=a
 " Disable error bells
@@ -91,6 +89,12 @@ set showmode
 set showcmd
 " Start scrolling three lines before the horizontal window border
 set scrolloff=3
+" Force status line to display
+set laststatus=2
+" Force tab line to display
+set showtabline=2
+" Disable GUI tab line in favor of plain text one
+set guioptions-=e
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
@@ -140,3 +144,4 @@ let g:netrw_winsize = 30
 
 " Command-T
 let g:CommandTWildIgnore=&wildignore . ",*/node_modules,*/venv,*/venv3,*.pyc,*.min.js"
+
