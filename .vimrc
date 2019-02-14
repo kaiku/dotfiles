@@ -1,5 +1,6 @@
 " Use pathogen.vim to manage plugins
 execute pathogen#infect()
+execute pathogen#helptags()
 filetype plugin on
 
 " `filetype indent on` causes problems with vim-jsx indentation,
