@@ -69,3 +69,5 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=yes
 GIT_PS1_SHOWSTASHSTATE=yes 
 GIT_PS1_SHOWUNTRACKEDFILES=yes
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
