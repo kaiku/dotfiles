@@ -73,4 +73,7 @@ GIT_PS1_SHOWUNTRACKEDFILES=yes
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Disable Dell XPS touchscreen
-xinput | grep 'ELAN' | grep -Po 'id=\d+' | cut -d= -f2 | xargs xinput disable
+# TODO: Figure out better way to run conditionally depending on computer
+if [ -x "$(command -v xinput)" ]; then
+  xinput | grep 'ELAN' | grep -Po 'id=\d+' | cut -d= -f2 | xargs xinput disable
+fi
